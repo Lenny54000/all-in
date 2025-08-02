@@ -69,14 +69,6 @@ Parfait pour rester connecté ou télétravailler au bord de la piscine 😎
 
 ---
 
-## 📸 Aperçu en images
-
-![Buffet](https://img.freepik.com/free-photo/buffet-restaurant_123827-22944.jpg)  
-![Piscine vue mer](https://img.freepik.com/photos-premium/hotel-resort-piscine-vue-sur-mer-coucher-du-soleil_118086-663.jpg)  
-![Chambre familiale](https://img.freepik.com/photos-gratuite/lit-confortable-hotel-chambre-moderne_53876-145153.jpg)
-
----
-
 ## 🎁 Pourquoi choisir ce séjour ?
 
 ✅ Climat idéal  
