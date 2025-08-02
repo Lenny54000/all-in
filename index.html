@@ -2,76 +2,74 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Carrousel d’images</title>
+  <title>Séjour Club Lookéa Playa Djerba</title>
   <style>
     body {
       font-family: sans-serif;
-      background: #f9f9f9;
+      background: linear-gradient(to bottom right, #ffe7d1, #fff);
       margin: 0;
-      padding: 0;
-      text-align: center;
+      padding: 2rem;
+      line-height: 1.6;
+      color: #333;
     }
-    h1 {
-      margin: 20px;
-      color: #0077aa;
+    h1, h2 {
+      color: #c1440e;
     }
-    .carousel {
-      display: flex;
-      overflow: hidden;
-      width: 90%;
-      margin: 20px auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    .carousel-container {
+      overflow-x: auto;
+      white-space: nowrap;
+      margin-top: 1rem;
     }
-    .carousel-track {
-      display: flex;
-      animation: scroll 30s linear infinite;
-    }
-    .carousel-track img {
-      width: 500px;
-      max-width: 90vw;
+    .carousel-container img {
+      width: 300px;
       height: auto;
-      flex-shrink: 0;
+      border-radius: 12px;
       margin-right: 10px;
-      border-radius: 8px;
-    }
-    @keyframes scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
+      display: inline-block;
     }
   </style>
 </head>
 <body>
+  <h1>🌞 Séjour All-Inclusive à Djerba – Club Lookéa Playa</h1>
 
-<h1>🌅 Aperçu de votre séjour</h1>
-<div class="carousel">
-  <div class="carousel-track" id="carousel-track">
-    <!-- Les images seront insérées ici -->
+  <h2>🏝️ Le paradis à petit prix pour toute la famille</h2>
+  <ul>
+    <li>🏊 Piscine extérieure immense</li>
+    <li>🌊 Accès direct à une <strong>plage de sable fin</strong></li>
+    <li>🍴 <strong>Buffets à volonté</strong>, à toute heure de la journée</li>
+    <li>🛏️ Chambres confortables et climatisées</li>
+    <li>🎲 Activités et animations pour enfants & ados</li>
+  </ul>
+
+  <h2>👨‍👩‍👧‍👦 Formule idéale</h2>
+  <ul>
+    <li><strong>Groupe :</strong> 2 adultes + 4 enfants (4, 11, 14, 16 ans)</li>
+    <li><strong>Départ :</strong> Nancy ou alentours (Bâle, Charleroi, etc.)</li>
+    <li><strong>Période :</strong> Vacances de printemps 2026</li>
+    <li><strong>Budget :</strong> Bon marché (Ryanair + hôtel all-inclusive)</li>
+  </ul>
+
+  <h2>🖼️ Aperçu en images</h2>
+  <div class="carousel-container" id="carousel">
+    <!-- Images chargées dynamiquement ici -->
   </div>
-</div>
 
-<script>
-  fetch('url.txt')
-    .then(response => response.text())
-    .then(data => {
-      const urls = data.split('\n').map(u => u.trim()).filter(u => u);
-      const track = document.getElementById('carousel-track');
-      urls.forEach(url => {
-        const img = document.createElement('img');
-        img.src = url;
-        track.appendChild(img);
+  <script>
+    // Charge les images depuis url.txt
+    fetch('url.txt')
+      .then(response => response.text())
+      .then(data => {
+        const container = document.getElementById('carousel');
+        const urls = data.split(/\\r?\\n/).filter(Boolean);
+        for (const url of urls) {
+          const img = document.createElement('img');
+          img.src = url;
+          container.appendChild(img);
+        }
+      })
+      .catch(error => {
+        console.error('Erreur lors du chargement des images :', error);
       });
-      // doubler les images pour boucle fluide
-      urls.forEach(url => {
-        const img = document.createElement('img');
-        img.src = url;
-        track.appendChild(img);
-      });
-    })
-    .catch(err => {
-      console.error("Erreur de chargement du fichier url.txt :", err);
-    });
-</script>
-
+  </script>
 </body>
 </html>
