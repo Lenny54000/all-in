@@ -1,5 +1,3 @@
-![Bannière Djerba](https://www.tunisianet.com.tn/img/cms/djerba.jpg)
-
 # 🏝️ Séjour All Inclusive de Rêve – Djerba Avril 2026 🌞
 
 > Offrez à votre famille un moment inoubliable sur l’île aux plages dorées  
@@ -9,13 +7,11 @@
 
 ## 📍 Destination : **Club Lookéa Playa Djerba 4⭐**
 
-![Plage et Piscine](https://cdn.evaneos.net/images/activities/large/73982412db25ee679b1797c6376a37c6.jpg)
-
-- 🌊 Accès direct à une plage privée
-- 🏊 Piscines familiales & toboggans
-- 🍴 Buffets à volonté du lever au coucher
-- 🛌 Chambres spacieuses familiales
-- 📶 Wifi dans tout l'hôtel
+- 🌊 Accès direct à une plage privée  
+- 🏊 Piscines familiales & toboggans  
+- 🍴 Buffets à volonté du lever au coucher  
+- 🛌 Chambres spacieuses familiales  
+- 📶 Wifi dans tout l'hôtel  
 - 🧘‍♀️ Animations, club enfant, détente
 
 ---
@@ -23,7 +19,7 @@
 ## 👨‍👩‍👧‍👦 Composition du séjour
 
 🎯 Parfait pour :
-- 2 adultes
+- 2 adultes  
 - 4 enfants : **4, 11, 14 et 16 ans**
 
 🏠 **Chambres communicantes** confortables pour garder proximité et tranquillité.
@@ -45,10 +41,10 @@
 ☀️ Température moyenne : 25-28°C
 
 ✈️ Départs depuis :
-- Bâle-Mulhouse
-- Luxembourg
-- Charleroi
-- Beauvais
+- Bâle-Mulhouse  
+- Luxembourg  
+- Charleroi  
+- Beauvais  
 
 🚗 Tous accessibles en moins de 3h de Nancy !
 
@@ -75,8 +71,8 @@ Parfait pour rester connecté ou télétravailler au bord de la piscine 😎
 
 ## 📸 Aperçu en images
 
-![Buffet](https://img.freepik.com/free-photo/buffet-restaurant_123827-22944.jpg)
-![Piscine vue mer](https://img.freepik.com/photos-premium/hotel-resort-piscine-vue-sur-mer-coucher-du-soleil_118086-663.jpg)
+![Buffet](https://img.freepik.com/free-photo/buffet-restaurant_123827-22944.jpg)  
+![Piscine vue mer](https://img.freepik.com/photos-premium/hotel-resort-piscine-vue-sur-mer-coucher-du-soleil_118086-663.jpg)  
 ![Chambre familiale](https://img.freepik.com/photos-gratuite/lit-confortable-hotel-chambre-moderne_53876-145153.jpg)
 
 ---
@@ -98,7 +94,3 @@ Parfait pour rester connecté ou télétravailler au bord de la piscine 😎
 
 > Ce séjour va plaire autant aux enfants qu’aux parents 😍  
 > **→ À vous de créer vos souvenirs de rêve 🌅**
-
----
-
-![Logo Lookéa](https://look-voyages.fr/themes/lookea/img/logo_lookea.png)
