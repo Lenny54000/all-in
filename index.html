@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carrousel d’images</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    h1 {
+      margin: 20px;
+      color: #0077aa;
+    }
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      width: 90%;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .carousel-track {
+      display: flex;
+      animation: scroll 30s linear infinite;
+    }
+    .carousel-track img {
+      width: 500px;
+      max-width: 90vw;
+      height: auto;
+      flex-shrink: 0;
+      margin-right: 10px;
+      border-radius: 8px;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+<body>
+
+<h1>🌅 Aperçu de votre séjour</h1>
+<div class="carousel">
+  <div class="carousel-track" id="carousel-track">
+    <!-- Les images seront insérées ici -->
+  </div>
+</div>
+
+<script>
+  fetch('url.txt')
+    .then(response => response.text())
+    .then(data => {
+      const urls = data.split('\n').map(u => u.trim()).filter(u => u);
+      const track = document.getElementById('carousel-track');
+      urls.forEach(url => {
+        const img = document.createElement('img');
+        img.src = url;
+        track.appendChild(img);
+      });
+      // doubler les images pour boucle fluide
+      urls.forEach(url => {
+        const img = document.createElement('img');
+        img.src = url;
+        track.appendChild(img);
+      });
+    })
+    .catch(err => {
+      console.error("Erreur de chargement du fichier url.txt :", err);
+    });
+</script>
+
+</body>
+</html>
