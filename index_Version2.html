@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Séjour All Inclusive – Djerba 2026</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: linear-gradient(to bottom right, #ffe7d1, #fff);
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1, h2 {
+      color: #c1440e;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    blockquote {
+      background: #fff6e5;
+      border-left: 5px solid #ffa726;
+      margin: 1.5rem 0;
+      padding: 1rem;
+      font-style: italic;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      width: 90%;
+      margin: 2rem auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .carousel-track {
+      display: flex;
+      animation: scroll 30s linear infinite;
+    }
+    .carousel-track img {
+      width: 500px;
+      max-width: 90vw;
+      height: auto;
+      flex-shrink: 0;
+      margin-right: 10px;
+      border-radius: 8px;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🏝️ Séjour All Inclusive de Rêve – Djerba Avril 2026 🌞</h1>
+
+  <blockquote>
+    Offrez-vous un moment inoubliable sur l’île aux plages dorées.  
+    <strong>Soleil, mer turquoise, buffets à volonté, activités pour tous !</strong>
+  </blockquote>
+
+  <h2>📍 Destination : Club Lookéa Playa Djerba 4⭐</h2>
+  <ul>
+    <li>🌊 Accès direct à une plage privée</li>
+    <li>🏊 Piscines familiales & toboggans</li>
+    <li>🍴 Buffets à volonté du lever au coucher</li>
+    <li>🛌 Chambres spacieuses familiales</li>
+    <li>📶 Wifi dans tout l'hôtel</li>
+    <li>🧘‍♀️ Animations, club enfant, détente</li>
+  </ul>
+
+  <h2>🗓️ Détail du séjour</h2>
+  <p>
+    <strong>6 nuits en formule ultra all inclusive</strong> : tout est compris, y compris le trajet (vols A/R et transferts), pour seulement <span style="color:#c1440e; font-size:1.2em;">600 € par personne</span>.<br>
+    Venez en famille, entre amis ou en solo, le prix reste le même par personne !
+  </p>
+
+  <h2>🍽️ Formule Ultra All Inclusive</h2>
+  <ul>
+    <li>✅ Petit déjeuner buffet 🥐</li>
+    <li>✅ Déjeuner & dîner à volonté 🍝🥗</li>
+    <li>✅ Snacks et boissons H24 🍹</li>
+    <li>✅ Soirées thématiques et ambiance conviviale 🎶</li>
+  </ul>
+
+  <h2>📅 Quand partir ?</h2>
+  <p><strong>📆 Entre le 11 et 26 avril 2026</strong> (vacances de printemps)</p>
+  <p>☀️ Température moyenne : 25-28°C</p>
+  <p>✈️ Départs depuis :</p>
+  <ul>
+    <li>Bâle-Mulhouse</li>
+    <li>Luxembourg</li>
+    <li>Charleroi</li>
+    <li>Beauvais</li>
+  </ul>
+  <p>🚗 Tous accessibles en moins de 3h de Nancy !</p>
+
+  <h2>💰 Budget</h2>
+  <table>
+    <tr><th>Élément</th><th>Inclus ?</th><th>Détail</th></tr>
+    <tr><td>✈️ Vols aller-retour</td><td>✅</td><td>Inclus dans l'offre</td></tr>
+    <tr><td>🏨 Hôtel 4*</td><td>✅</td><td>All Inclusive <strong>6 nuits</strong></td></tr>
+    <tr><td>🚐 Transferts inclus</td><td>✅</td><td>Navette aéroport incluse</td></tr>
+    <tr><td>💡 Frais cachés ?</td><td>❌</td><td>Aucun, tout est compris !</td></tr>
+  </table>
+  <p><strong>✅ <span style="color:#c1440e; font-size:1.2em;">600 € par personne</span> tout inclus, trajet compris</strong></p>
+
+  <h2>📶 Connectivité</h2>
+  <ul>
+    <li>📱 Wifi gratuit dans l’hôtel</li>
+    <li>📡 Bonne couverture mobile (Tunisie Télécom, Orange)</li>
+    <li>Parfait pour rester connecté ou télétravailler au bord de la piscine 😎</li>
+  </ul>
+
+  <h2>📸 Aperçu en images</h2>
+  <div class="carousel">
+    <div class="carousel-track" id="carousel-track">
+      <!-- Images chargées dynamiquement depuis url.txt -->
+    </div>
+  </div>
+
+  <script>
+    window.onload = function () {
+      fetch('url.txt')
+        .then(response => response.text())
+        .then(data => {
+          const urls = data.split('\n').map(u => u.trim()).filter(u => u);
+          const track = document.getElementById('carousel-track');
+          if (!track) return;
+          urls.concat(urls).forEach(url => {
+            const img = document.createElement('img');
+            img.src = url;
+            track.appendChild(img);
+          });
+        })
+        .catch(error => {
+          console.error('Erreur de chargement des images :', error);
+        });
+    };
+  </script>
+
+  <h2>🎁 Pourquoi choisir ce séjour ?</h2>
+  <ul>
+    <li>✅ Climat idéal</li>
+    <li>✅ Ambiance familiale et reposante</li>
+    <li>✅ Tout est organisé, zéro stress</li>
+    <li>✅ Budget ultra maîtrisé</li>
+    <li>✅ 🌊 Plage + piscine + soleil + bouffe = bonheur</li>
+    <li>✅ <strong>6 nuits tout inclus (vol + transferts + hôtel + repas) pour seulement 600 € par personne</strong></li>
+    <li>✅ <strong>Tarif valable quelle que soit la taille de votre groupe</strong></li>
+  </ul>
+
+  <h2>✈️ Prêts à partir ?</h2>
+  <p>📩 Réservez dès l’ouverture des ventes pour avril 2026.</p>
+  <p>💬 Je peux vous prévenir dès que les réservations ouvrent !</p>
+
+  <blockquote>
+    Ce séjour va plaire à tous, petits comme grands 😍  
+    <strong>→ À vous de créer vos souvenirs de rêve 🌅</strong>
+  </blockquote>
+
+</body>
+</html>
